@@ -652,7 +652,7 @@ namespace xt
 #else
 
     template <class T>
-    using xtrivially_default_constructible = std::has_trivial_default_constructor<T>;
+    using xtrivially_default_constructible = std::is_trivially_default_constructible<T>;
 
 #endif
 #undef XTENSOR_GLIBCXX_USE_CXX11_ABI
